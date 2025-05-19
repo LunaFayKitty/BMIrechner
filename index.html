@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>BMI Rechner</title>
+  </head>
+  <body
+    class="text-center bg-cover bg-[url(kseniya-lapteva-bw6EB47LpfU-unsplash.jpg)]"
+  >
+    <img
+      class="w-full h-60 object-cover"
+      src="siora-photography-cixohzDpNIo-unsplash.jpg"
+      alt="Maßband"
+      title="Ein Maßband"
+    />
+    <h1
+      class="text-xl font-bold text-center sm:text-5xl sm:font-extrabold underline mb-20 bg-gray-500 bg-opacity-40"
+    >
+      BMI Rechner
+    </h1>
+    <form class="flex flex-col items-center gap-3">
+      <input
+        class="border-4 text-center p-3"
+        type="number"
+        id="height"
+        placeholder="Körpergröße in cm"
+      />
+      <input
+        class="border-4 text-center p-3"
+        type="number"
+        id="weight"
+        placeholder="Gewicht in kg"
+      />
+    </form>
+    <div class="mt-5 flex gap-5 items-center justify-center relative">
+      <button
+        class="p-4 bg-gray-600 border-gray-200 border-4 text-xl text-white hover:bg-gray-200 hover:border-gray-600"
+        id="calculate"
+      >
+        Berechnen
+      </button>
+      <button
+        class="top-64 p-4 absolute sm:top-56 rounded-full aspect-square bg-gray-600 border-gray-200 border-4 text-xl text-white hover:bg-gray-200 hover:border-gray-600"
+        id="reset"
+      >
+        RESET
+      </button>
+    </div>
+    <div
+      class="text-lg font-bold text-white mt-7 sm:text-xl bg-gray-600 bg-opacity-50"
+    >
+      <p class="underline">Ihr BMI-Wert ist:</p>
+      <span class="text-lg" id="bmiWert"> bitte berechnen... </span>
+      <p class="text-white font-bold" id="result"></p>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
